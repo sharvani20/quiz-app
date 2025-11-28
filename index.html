@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="title">Quiz Game</h1>
+
+        <div id="quiz-box">
+            <h2 id="question">Question comes here</h2>
+            <h3 id="timer">Time Left: 10s</h3>
+            <div id="answers"></div>
+            <button id="next-btn" class="btn" onclick="nextQuestion()">Next</button>
+        </div>
+
+        <div id="result-box" class="hide">
+            <h2>Your Score</h2>
+            <p id="score"></p>
+            <button onclick="restartQuiz()" class="btn">Restart</button>
+             <button id="quit-btn" onclick="Quit()" class="btn">Quit</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
